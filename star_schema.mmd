@@ -1,0 +1,25 @@
+graph TD
+    subgraph "Dimension Tables"
+        D1[dim_product<br/>---<br/>product_key PK<br/>product_id<br/>product_name<br/>category<br/>brand<br/>model<br/>product_type<br/>unit_price]
+        D2[dim_customer<br/>---<br/>customer_key PK<br/>customer_id<br/>customer_age<br/>customer_gender<br/>age_group]
+        D3[dim_date<br/>---<br/>date_key PK<br/>full_date<br/>year<br/>quarter<br/>month<br/>week<br/>day<br/>year_month]
+        D4[dim_staff<br/>---<br/>staff_key PK<br/>staff_id]
+        D5[dim_supplier<br/>---<br/>supplier_key PK<br/>supplier_id]
+    end
+    
+    subgraph "Fact Table"
+        F[fact_transactions<br/>---<br/>transaction_key PK<br/>product_key FK<br/>customer_key FK<br/>date_key FK<br/>staff_key FK<br/>supplier_key FK<br/>---<br/>transaction_id<br/>order_type<br/>payment_method<br/>transaction_status<br/>---<br/>quantity<br/>total_amount<br/>discount_applied<br/>delivery_time_min<br/>customer_rating<br/>inventory_level]
+    end
+    
+    D1 -.-> F
+    D2 -.-> F
+    D3 -.-> F
+    D4 -.-> F
+    D5 -.-> F
+    
+    style F fill:#FFE5B4,stroke:#FF8C00,stroke-width:3px
+    style D1 fill:#B4D7FF,stroke:#0066CC,stroke-width:2px
+    style D2 fill:#B4D7FF,stroke:#0066CC,stroke-width:2px
+    style D3 fill:#B4D7FF,stroke:#0066CC,stroke-width:2px
+    style D4 fill:#B4D7FF,stroke:#0066CC,stroke-width:2px
+    style D5 fill:#B4D7FF,stroke:#0066CC,stroke-width:2px
