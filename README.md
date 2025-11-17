@@ -38,7 +38,7 @@ This project provides a complete end-to-end data analytics pipeline for a mobile
 ## 3. Setup and Installation
 ```bash
 python -m venv venv
-venv\Scripts\activate
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 

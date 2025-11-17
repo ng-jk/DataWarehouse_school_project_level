@@ -1,0 +1,29 @@
+# Mobile Shop Sales Analysis - Python Requirements
+# Install with: pip install -r requirements.txt
+
+# Core Data Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+
+# Jupyter Notebook Support
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.22.0
+
+# Optional: Enhanced Jupyter Experience
+ipywidgets>=8.0.0
+jupyterlab>=4.0.0
+
+# Utility Libraries
+python-dateutil>=2.8.0
+
+tabulate
+
+
