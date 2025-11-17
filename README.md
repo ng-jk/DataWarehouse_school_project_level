@@ -103,3 +103,6 @@ The dashboard is organized into three main tabs:
 -   **Product Type Distribution:** Stacked bar charts showing the distribution of "Accessory" vs. "Repair" products across categories, brands, and models.
 
 ---
+
+## 2. Machine learning
+in folder machine learning include a jupyter notebook program to conduct machine learning and basic analytic
